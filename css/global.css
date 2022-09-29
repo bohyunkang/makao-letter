@@ -162,7 +162,6 @@ header ul {
   .posts .cards {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(6, 1fr);
   }
 
   .posts .cards .card a {
@@ -188,7 +187,6 @@ header ul {
 @media screen and (min-width: 900px) {
   .posts .cards {
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(4, 1fr);
   }
 }
 
@@ -261,7 +259,6 @@ header ul {
 
   .posts .cards {
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(3, 1fr);
     max-width: 1120px;
   }
 }

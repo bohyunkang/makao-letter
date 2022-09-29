@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+/* 폰트 크기 설정 */
+main {
+  font-size: 16px;
+}
+
+/* header */
+header {
+  display: flex;
+  justify-content: center;
+
+  padding: 6.7vw 0;
+  border-bottom: 1px solid #000000;
+}
+
+header h1 .logo {
+  font-family: 'Pacifico', cursive;
+  font-size: 8vw;
+}
+
+header ul {
+  display: none;
+}
+
+/* slogan 영역 */
+.slogan {
+  position: relative;
+
+  padding-top: 40vw;
+
+  border-bottom: 1px solid #000000;
+}
+.slogan .mascot {
+  position: absolute;
+  top: -14vw;
+  left: 14vw;
+
+  width: 70vw;
+  z-index: -1;
+}
+
+.slogan .title {
+  padding: 5vw 0;
+
+  text-align: center;
+
+  background-color: #4593fc;
+  border-top: 1px solid #000000;
+}
+
+.slogan .title h2 {
+  font-size: 6vw;
+  font-weight: 700;
+  line-height: 8.5vw;
+}
+
+.slogan .title strong {
+  display: block;
+}
+
+/* posts 영역 */
+.posts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 6vw 12vw 6vw;
+}
+
+.posts .cards .card {
+  border-width: 0 1px 1px 1px;
+  border-style: solid;
+  border-color: #000000;
+}
+
+.posts .cards .card a {
+  display: grid;
+  grid-template-columns: 1fr 5fr 1fr;
+  grid-template-rows: 1fr 5fr 0.5fr;
+  grid-template-areas:
+    'title title title'
+    'summary summary summary'
+    'time time likes';
+
+  height: 94vw;
+  padding: 5vw;
+
+  color: #000000;
+}
+
+.posts .cards .card .title {
+  font-size: 4vw;
+  font-weight: 700;
+  grid-area: title;
+}
+
+.posts .cards .card .summary {
+  grid-area: summary;
+}
+
+.posts .cards .card time {
+  grid-area: time;
+  align-self: center;
+}
+
+.posts .cards .card .likes {
+  grid-area: likes;
+  align-self: center;
+}
+
+.posts .more {
+  font-size: 5vw;
+
+  margin: 8vw 0;
+  padding: 3vw 9vw;
+
+  background-color: #4593fc;
+  border: 1px solid #000000;
+  border-radius: 10vw;
+
+  color: #ffffff;
+}

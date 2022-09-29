@@ -10,4 +10,4 @@
 ![image](https://user-images.githubusercontent.com/65386533/192968204-fd4b5de8-14f5-4a0e-acab-d874f5a615bd.png)
 
 ## 데스크탑 페이지
-![image](https://user-images.githubusercontent.com/65386533/192968257-e35fb605-593c-49ee-a5a3-62850a67bd9b.png)
+![image](https://user-images.githubusercontent.com/65386533/192986760-7b4b5f3f-95fc-44cb-8156-5e741115698a.png)

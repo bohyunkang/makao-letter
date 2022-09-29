@@ -34,7 +34,8 @@ header ul {
 .slogan .mascot {
   position: absolute;
   top: -14vw;
-  left: 14vw;
+  left: 50%;
+  transform: translate3d(-50%, 0, 0);
 
   width: 70vw;
   z-index: -1;
@@ -67,8 +68,12 @@ header ul {
   padding: 0 6vw 12vw 6vw;
 }
 
+.posts .cards {
+  border-left: 1px solid #000000;
+}
+
 .posts .cards .card {
-  border-width: 0 1px 1px 1px;
+  border-width: 0 1px 1px 0px;
   border-style: solid;
   border-color: #000000;
 }
@@ -106,6 +111,8 @@ header ul {
 .posts .cards .card .likes {
   grid-area: likes;
   align-self: center;
+
+  min-width: 45px;
 }
 
 .posts .more {
@@ -119,4 +126,64 @@ header ul {
   border-radius: 10vw;
 
   color: #ffffff;
+}
+
+@media screen and (min-width: 640px) {
+  header {
+    padding: 2em 1em;
+  }
+
+  header h1 .logo {
+    font-size: 2.1em;
+  }
+
+  .slogan {
+    padding-top: 17em;
+  }
+
+  .slogan .mascot {
+    top: -5.5em;
+    width: 30em;
+  }
+
+  .slogan .title {
+    padding: 0.5em 0;
+  }
+
+  .slogan .title h2 {
+    font-size: 1.6em;
+    line-height: 1.8em;
+  }
+
+  .posts .cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+  }
+
+  .posts .cards .card a {
+    height: 19em;
+
+    padding: 1em 1em 1em 1em;
+  }
+
+  .posts .cards .card .title {
+    font-size: 1em;
+  }
+
+  .posts .more {
+    font-size: 1.2em;
+
+    margin: 2.5em 0;
+    padding: 0.5em 2em;
+
+    border-radius: 2em;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .posts .cards {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+  }
 }
